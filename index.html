@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8" />
@@ -419,7 +419,7 @@ for (let cat in catScores) {
   let suggestion = "";
 
   if (rate >= 85) {
-    mastery = "✅ Sangat Baik";
+    mastery = "🟢 Sangat Baik";
     desc = "Kamu sudah menguasai materi ini dengan sangat baik. Pemahamanmu kuat dan langkah-langkahmu dalam menyelesaikan soal sudah tepat.";
     suggestion = "Pertahankan kemampuan ini dengan terus melatih soal yang menantang agar semakin percaya diri.";
   } 
@@ -468,10 +468,17 @@ analysis += "</ul>";
 
   const rekom = `
   <h3>Rekomendasi Umum:</h3>
-  <p>📘 <b>Modeling</b>: Latih mengubah soal cerita menjadi bentuk persamaan.</p>
-  <p>🔢 <b>Perhitungan</b>: Ulangi latihan substitusi & eliminasi langkah demi langkah.</p>
-  <p>💡 <b>Konsep</b>: Pahami makna tiap variabel dan hubungan antar persamaan.</p>
-  <p style='color:#1e3a8a; font-weight:500;'>Terus semangat! Latihan rutin akan membuatmu semakin percaya diri 🌟</p>`;
+  <p>📘 <b>Modeling</b>: Tingkatkan kemampuan dalam <em>memahami konteks soal cerita</em> dan mengidentifikasi informasi penting untuk disusun menjadi model matematis.
+  Cobalah membuat skema hubungan antar variabel (misalnya tabel atau diagram) sebelum menuliskannya ke bentuk persamaan.
+  Latihan rutin mengubah situasi nyata menjadi bentuk aljabar akan memperkuat keterampilan berpikir analitis dan logis.</p>
+  <p>🔢 <b>Perhitungan</b>: Kembangkan ketelitian dalam proses <em>substitusi dan eliminasi</em>.
+  Gunakan pendekatan sistematis — mulai dari menentukan variabel yang paling mudah diisolasi hingga memeriksa kembali setiap langkah perhitungan.
+  Bandingkan hasil antar metode (substitusi, eliminasi, atau campuran) untuk memastikan konsistensi jawaban.
+  Gunakan kalkulator hanya setelah memahami logika perhitungannya.</p>
+  <p>💡 <b>Konsep</b>: Dalami makna dari setiap variabel dan hubungan antar persamaan.
+  Sadari bahwa SPLTV bukan hanya soal mencari nilai variabel, tetapi juga memahami bagaimana perubahan satu variabel dapat memengaruhi variabel lainnya.
+  Refleksikan konteks dunia nyata dari setiap soal, agar konsep matematika terasa lebih bermakna dan mudah diingat.</p>
+  <p style='color:#1e3a8a; font-weight:500;'> ✨ Terus semangat! Konsistensi dan pemahaman yang mendalam akan membuatmu semakin percaya diri menghadapi berbagai bentuk soal SPLTV. 🌟</p>`;
 
   document.getElementById("summary").innerHTML = `
     <p><b>Nama:</b> ${document.getElementById("studentName").value}</p>
