@@ -107,233 +107,153 @@ q:"Penyelesaian dari sistem persamaan { 3x + 7y + 2z = 8 ; 4x + 2y - 5z = -19 ; 
 options:["x = 5, y = 3, z = 1", "x = 4, y = -5, z = 1", "x = -3, y = 4, z = 1", "x = -5, y = 3, z = 2", "x = -5, y = 3, z = 1"],
 answer:4, cat:"Perhitungan",
 fb_true:"✅ Tepat — hasilnya (x, y, z) = (-5, 3, 1). Dari persamaan (3): 6y - 4z = 14 → 3y - 2z = 7. Dari (1): 3x + 7y + 2z = 8. Substitusi z = (3y - 7)/2 ke (1) dan (2). Lakukan eliminasi bertahap, diperoleh y = 3, z = 1. Substitusi kembali → x = -5. Jadi (x, y, z) = (-5, 3, 1).",
-fb_false:"❌ Salah — periksa kembali proses eliminasi z dan substitusi y.Dari persamaan (3): 6y - 4z = 14 → 3y - 2z = 7. Dari (1): 3x + 7y + 2z = 8. Substitusi z = (3y - 7)/2 ke (1) dan (2). Lakukan eliminasi bertahap, diperoleh y = 3, z = 1. Substitusi kembali → x = -5. Jadi (x, y, z) = (-5, 3, 1).",
+fb_false:"❌ Salah — periksa kembali proses eliminasi z dan substitusi y. Dari persamaan (3): 6y - 4z = 14 → 3y - 2z = 7. Dari (1): 3x + 7y + 2z = 8. Substitusi z = (3y - 7)/2 ke (1) dan (2). Lakukan eliminasi bertahap, diperoleh y = 3, z = 1. Substitusi kembali → x = -5. Jadi (x, y, z) = (-5, 3, 1).",
 },
 
 {
 id:2,
 type:"mcq",
-q:"Tentukan penyelesaian dari SPLTV berikut: { 2a+b-2c=19 ; 4a+2b+c=13 ; a+b+2c=3 } (urutkan (a,b,c))",
-options:["(-4,17,-5)","(-4,-5,17)","(-5,17,-4)","(-5,-4,17)","(-4,19,-5)"],
+q:"Tentukan penyelesaian dari SPLTV berikut: {2a + b - 2c = 19; 4a + 2b + c = 13; a + b + 2c = 3}",
+options:["(-4, 17, -5)", "(-4, -5, 17)", "(-5, 17, -4)", "(-5, -4, 17)", "(-4, 19, -5)"],
 answer:2, cat:"Perhitungan",
-fb_true:"✅ Benar — solusi (a,b,c)=(-5,17,-4).",
-fb_false:"❌ Coba ulangi proses substitusi dari persamaan pertama ke kedua.",
-work:`1️⃣ Dari (1): b = 19 - 2a + 2c.<br>
-2️⃣ Substitusi ke (2): 4a + 2(19 - 2a + 2c) + c = 13 → 4a + 38 -4a + 4c + c = 13 → 5c = -25 → c = -5.<br>
-3️⃣ Masukkan c=-5 ke (3): a + b + 2(-5) = 3 → a + b -10 = 3 → a + b = 13.<br>
-4️⃣ Substitusi ke (1): 2a + (13 - a) - 2(-5) = 19 → a + 13 +10 = 19 → a = -4.<br>
-5️⃣ Maka b = 13 - (-4) = 17. ✅ (a,b,c)=(-5,17,-4).`
+fb_true:"✅ Benar — solusi (a, b, c) = (-5, 17, -4). Dari (1): b = 19 - 2a + 2c. Substitusi ke (2): 4a + 2(19 - 2a + 2c) + c = 13 → 4a + 38 -4a + 4c + c = 13 → 5c = -25 → c = -5. Masukkan c=-5 ke (3): a + b + 2(-5) = 3 → a + b -10 = 3 → a + b = 13. Substitusi ke (1): 2a + (13 - a) - 2(-5) = 19 → a + 13 +10 = 19 → a = -4. Maka b = 13 - (-4) = 17. Jadi (a, b, c) = (-5, 17, -4).",
+fb_false:"❌ Coba ulangi proses substitusi dari persamaan pertama ke kedua. Dari (1): b = 19 - 2a + 2c. Substitusi ke (2): 4a + 2(19 - 2a + 2c) + c = 13 → 4a + 38 -4a + 4c + c = 13 → 5c = -25 → c = -5. Masukkan c=-5 ke (3): a + b + 2(-5) = 3 → a + b -10 = 3 → a + b = 13. Substitusi ke (1): 2a + (13 - a) - 2(-5) = 19 → a + 13 +10 = 19 → a = -4. Maka b = 13 - (-4) = 17. Jadi (a, b, c) = (-5, 17, -4).",
 },
 
 {
 id:3,
 type:"mcq",
-q:"Jika (x₀,y₀,z₀) memenuhi { 3x−2y−3z=5 ; x+y−2z=3 ; x−y+z=−4 }, maka nilai z₀ adalah ...",
-options:["-3","-2","-1","4","5"],
+q:"Jika (x₀, y₀, z₀) memenuhi { 3x − 2y − 3z = 5; x + y − 2z = 3; x − y + z = −4}, maka nilai dari z₀ adalah ...",
+options:["-3", "-2", "-1", "4", "5"],
 answer:1, cat:"Perhitungan",
-fb_true:"✅ Tepat — z₀ = -2.",
-fb_false:"❌ Salah — coba eliminasi y lebih dahulu dari persamaan (2) dan (3).",
-work:`Eliminasi y:<br>
-(2): x + y - 2z = 3 → y = 3 - x + 2z.<br>
-Substitusi ke (3): x - (3 - x + 2z) + z = -4 → x - 3 + x - 2z + z = -4 → 2x - 3 - z = -4 → 2x - z = -1 → z = 2x + 1.<br>
-Masukkan ke (1): 3x - 2(3 - x + 2(2x + 1)) - 3(2x + 1) = 5 → hasilnya z=-2.`
+fb_true:"✅ Tepat — z₀ = -2. Eliminasi y: (2): x + y - 2z = 3 → y = 3 - x + 2z. Substitusi ke (3): x - (3 - x + 2z) + z = -4 → x - 3 + x - 2z + z = -4 → 2x - 3 - z = -4 → 2x - z = -1 → z = 2x + 1. Masukkan ke (1): 3x - 2(3 - x + 2(2x + 1)) - 3(2x + 1) = 5 → hasilnya z = -2.",
+fb_false:"❌ Salah — coba eliminasi y lebih dahulu dari persamaan (2) dan (3). Eliminasi y: (2): x + y - 2z = 3 → y = 3 - x + 2z. Substitusi ke (3): x - (3 - x + 2z) + z = -4 → x - 3 + x - 2z + z = -4 → 2x - 3 - z = -4 → 2x - z = -1 → z = 2x + 1. Masukkan ke (1): 3x - 2(3 - x + 2(2x + 1)) - 3(2x + 1) = 5 → hasilnya z = -2.",
 },
 
 {
 id:4,
 type:"mcq",
-q:"Nilai dari x - y + z dari sistem persamaan linier tiga variabel { x+2y+3z=14 ; 2x−y−3z=−9 ; −x+2y+z=6 } adalah ...",
-options:["1","2","5","6","9"],
+q:"Nilai dari x - y + z dari sistem persamaan linier tiga variabel {x + 2y + 3z = 14; 2x − y − 3z = −9; −x + 2y + z = 6} adalah ...",
+options:["1", "2", "5", "6", "9"],
 answer:2, cat:"Perhitungan",
-fb_true:"✅ Benar — nilai x−y+z=5.",
-fb_false:"❌ Salah — cek kembali pengurangan antara persamaan (1) dan (2).",
-work:`Eliminasi z dari (1)&(2):<br>
-(1)*1 + (2)*1 → 3x + y = 5 → y = 5 - 3x.<br>
-Substitusi ke (3): -x + 2(5 - 3x) + z = 6 → -x + 10 - 6x + z = 6 → -7x + z = -4 → z = 7x - 4.<br>
-Substitusi ke (1): x + 2(5 - 3x) + 3(7x - 4) = 14 → 16x - 2 = 14 → x=1, y=2, z=3 → x-y+z=5.`
+fb_true:"✅ Benar — nilai x − y + z = 5. Eliminasi z dari (1) & (2): (1)*1 + (2)*1 → 3x + y = 5 → y = 5 - 3x. Substitusi ke (3): -x + 2(5 - 3x) + z = 6 → -x + 10 - 6x + z = 6 → -7x + z = -4 → z = 7x - 4. Substitusi ke (1): x + 2(5 - 3x) + 3(7x - 4) = 14 → 16x - 2 = 14 → x = 1, y = 2, z = 3 → x - y + z = 5.",
+fb_false:"❌ Salah — cek kembali pengurangan antara persamaan (1) dan (2). Eliminasi z dari (1) & (2): (1)*1 + (2)*1 → 3x + y = 5 → y = 5 - 3x. Substitusi ke (3): -x + 2(5 - 3x) + z = 6 → -x + 10 - 6x + z = 6 → -7x + z = -4 → z = 7x - 4. Substitusi ke (1): x + 2(5 - 3x) + 3(7x - 4) = 14 → 16x - 2 = 14 → x = 1, y = 2, z = 3 → x - y + z = 5.",
 },
 
 {
 id:5,
 type:"mcq",
-q: "Harga 2 kg mangga, 2 kg jeruk, dan 1 kg anggur adalah Rp 70.000 dan harga 1 kg mangga, 2 kg jeruk, dan 2 kg anggur adalah Rp 90.000. Jika harga 2 kg mangga, 2 kg jeruk, dan 3 kg anggur adalah Rp 130.000. Harga 1 kg jeruk adalah ...",
-options: ["Rp 5.000","Rp 7.500","Rp 10.000","Rp 12.000","Rp 15.000"],
+q: "Harga 2 kg jeruk, 2 kg mangga, dan 1 kg apel adalah Rp 70.000 dan harga 1 kg jeruk, 2 kg mangga, dan 2 kg apel adalah Rp 90.000. Jika harga 2 kg jeruk, 2 kg mangga, dan 3 kg apel adalah Rp 130.000. Harga 1 kg mangga adalah ...",
+options: ["Rp 5.000", "Rp 7.500", "Rp 10.000", "Rp 12.000", "Rp 15.000"],
 answer:3, cat:"Modeling",
-fb_true:"✅ Tepat — harga jeruk = Rp 10.000.",
-fb_false:"❌ Salah — buat dulu tiga persamaan harga dan eliminasi salah satu variabel.",
-work:`Misal mangga = x, jeruk = y, anggur = z.<br>
-(1) 2x + 2y + z = 70000<br>
-(2) x + 2y + 2z = 90000<br>
-(3) 2x + 2y + 3z = 130000<br>
-Dari (2)-(1): -x + z = 20000 → z = x + 20000.<br>
-Substitusi ke (1): 2x + 2y + x + 20000 = 70000 → 3x + 2y = 50000.<br>
-Substitusi x dan z → hasil y=10000.`
+fb_true:"✅ Tepat — harga mangga = Rp 10.000. Misal jeruk = x, mangga = y, apel = z. (1) 2x + 2y + z = 70000. (2) x + 2y + 2z = 90000. (3) 2x + 2y + 3z = 130000. Dari (2)-(1): -x + z = 20000 → z = x + 20000. Substitusi ke (1): 2x + 2y + x + 20000 = 70000 → 3x + 2y = 50000. Substitusi x dan z → hasil y = 10000.",
+fb_false:"❌ Salah — buat dulu tiga persamaan harga dan eliminasi salah satu variabel. Misal jeruk = x, mangga = y, apel = z. (1) 2x + 2y + z = 70000. (2) x + 2y + 2z = 90000. (3) 2x + 2y + 3z = 130000. Dari (2)-(1): -x + z = 20000 → z = x + 20000. Substitusi ke (1): 2x + 2y + x + 20000 = 70000 → 3x + 2y = 50000. Substitusi x dan z → hasil y = 10000.",
 },
 
 {
 id:6,
 type:"mcq",
-q:"Diketahui tiga tahun lalu, umur A sama dengan 2 kali umur B. Sedangkan dua tahun yang akan datang, 4 kali umur A sama dengan umur B ditambah 36 tahun. Umur A sekarang adalah ... tahun",
-options:["4","6","9","12","15"],
+q:"Diketahui tiga tahun lalu, umur Arno sama dengan 2 kali umur Leo. Sedangkan dua tahun yang akan datang, 4 kali umur Arno sama dengan umur Leo ditambah 36 tahun. Umur Arno sekarang adalah ... tahun",
+options:["4", "6", "9", "12", "15"],
 answer:2, cat:"Modeling",
-fb_true:"✅ Benar — umur A sekarang 9 tahun.",
-fb_false:"❌ Salah — perhatikan selisih waktu 3 tahun lalu dan 2 tahun akan datang.",
-work:`Misal umur A sekarang = a, umur B sekarang = b.<br>
-3 tahun lalu: a - 3 = 2(b - 3) → a - 3 = 2b - 6 → a = 2b - 3.<br>
-2 tahun lagi: 4(a + 2) = (b + 2) + 36 → 4a + 8 = b + 38 → b = 4a - 30.<br>
-Substitusi b ke a = 2b - 3 → a = 2(4a - 30) - 3 → a = 8a - 63 → 7a = 63 → a = 9.`
+fb_true:"✅ Benar — umur Arno sekarang 9 tahun. Misal umur Arno sekarang = a, umur Leo sekarang = b. 3 tahun lalu: a - 3 = 2(b - 3) → a - 3 = 2b - 6 → a = 2b - 3. 2 tahun lagi: 4(a + 2) = (b + 2) + 36 → 4a + 8 = b + 38 → b = 4a - 30. Substitusi b ke a = 2b - 3 → a = 2(4a - 30) - 3 → a = 8a - 63 → 7a = 63 → a = 9.",
+fb_false:"❌ Salah — perhatikan selisih waktu 3 tahun lalu dan 2 tahun akan datang. Misal umur Arno sekarang = a, umur Leo sekarang = b. 3 tahun lalu: a - 3 = 2(b - 3) → a - 3 = 2b - 6 → a = 2b - 3. 2 tahun lagi: 4(a + 2) = (b + 2) + 36 → 4a + 8 = b + 38 → b = 4a - 30. Substitusi b ke a = 2b - 3 → a = 2(4a - 30) - 3 → a = 8a - 63 → 7a = 63 → a = 9.",
 },
 
 {
 id:7,
 type:"mcq",
-q: "Toko A, toko B, dan toko C menjual sepeda. Ketiga toko tersebut selalu berbelanja di sebuah distributor sepeda yang sama. Toko A harus membayar Rp 5.500.000 untuk pembelian 5 sepeda jenis I dan 4 sepeda jenis II. Toko B harus membayar Rp 3.000.000 untuk pembelian 3 sepeda jenis I dan 2 sepeda jenis II. Jika Toko C membeli 6 sepeda jenis I dan 2 sepeda jenis II, maka toko C harus membayar ...",
-options: ["Rp 3.500.000","Rp 4.000.000","Rp 4.500.000","Rp 5.000.000","Rp 5.500.000"],
+q: "Toko Abi, toko Baim, dan toko Ciko menjual sepeda. Ketiga toko tersebut selalu berbelanja di sebuah distributor sepeda yang sama. Toko Abi harus membayar Rp 5.500.000 untuk pembelian 5 sepeda jenis I dan 4 sepeda jenis II. Toko Baim harus membayar Rp 3.000.000 untuk pembelian 3 sepeda jenis I dan 2 sepeda jenis II. Jika Toko Ciko membeli 6 sepeda jenis I dan 2 sepeda jenis II, maka toko Ciko harus membayar berapa?",
+options: ["Rp 3.500.000", "Rp 4.000.000", "Rp 4.500.000", "Rp 5.000.000", "Rp 5.500.000"],
 answer: 2, cat: "Modeling",
-fb_true:"✅ Tepat — toko C membayar Rp 4.500.000.",
-fb_false:"❌ Salah — tulis dulu sistem harga sepeda jenis I dan II.",
-work:`Misal harga sepeda I = x, sepeda II = y.<br>
-(1) 5x + 4y = 5500000<br>
-(2) 3x + 2y = 3000000<br>
-Eliminasi (1)-(2)*2 → 5x + 4y - 6x - 4y = -500000 → -x = -500000 → x = 500000.<br>
-Substitusi ke (2): 3(500000) + 2y = 3000000 → 1500000 + 2y = 3000000 → y = 750000.<br>
-Untuk toko C: 6x + 2y = 6(500000) + 2(750000) = 3000000 + 1500000 = 4500000.`
+fb_true:"✅ Tepat — toko Ciko membayar Rp 4.500.000. Misal harga sepeda I = x, sepeda II = y. (1) 5x + 4y = 5500000. (2) 3x + 2y = 3000000. Eliminasi (1)-(2)*2 → 5x + 4y - 6x - 4y = -500000 → -x = -500000 → x = 500000. Substitusi ke (2): 3(500000) + 2y = 3000000 → 1500000 + 2y = 3000000 → y = 750000. Untuk toko C: 6x + 2y = 6(500000) + 2(750000) = 3000000 + 1500000 = 4500000.",
+fb_false:"❌ Salah — tulis dulu sistem harga sepeda jenis I dan II. Misal harga sepeda I = x, sepeda II = y. (1) 5x + 4y = 5500000. (2) 3x + 2y = 3000000. Eliminasi (1)-(2)*2 → 5x + 4y - 6x - 4y = -500000 → -x = -500000 → x = 500000. Substitusi ke (2): 3(500000) + 2y = 3000000 → 1500000 + 2y = 3000000 → y = 750000. Untuk toko C: 6x + 2y = 6(500000) + 2(750000) = 3000000 + 1500000 = 4500000.",
 },
 
 {
 id:8,
 type:"mcq",
-q: "Irma membeli 2 kg apel dan 3 kg jeruk dengan harga Rp 57.000 sedangkan Ade membeli 3 kg apel dan 5 kg jeruk dengan harga Rp 90.000. Jika Surya hanya membeli 1 kg apel dan 1 kg jeruk, kemudian ia membayar dengan uang Rp 100.000, maka uang kembalian yang diterima Surya adalah ...",
-options: ["Rp 24.000","Rp 42.000","Rp 67.000","Rp 76.000","Rp 80.000"],
+q: "Izna membeli 2 kg buah pir dan 3 kg buah jeruk dengan harga Rp 57.000, sedangkan Adi membeli 3 kg buah pir dan 5 kg buah jeruk dengan harga Rp 90.000. Jika Sagara hanya membeli 1 kg buah pir dan 1 kg buah jeruk, kemudian ia membayar dengan uang Rp 100.000, maka uang kembalian yang diterima Sagara adalah ...",
+options: ["Rp 24.000", "Rp 42.000", "Rp 67.000", "Rp 76.000", "Rp 80.000"],
 answer:1, cat:"Modeling",
-fb_true:"✅ Benar — kembalian Rp 42.000.",
-fb_false:"❌ Salah — buat dulu sistem harga apel dan jeruk.",
-work:`Misal harga apel = x, jeruk = y.<br>
-(1) 2x + 3y = 57000<br>
-(2) 3x + 5y = 90000<br>
-Eliminasi → dari (1)*3 = 6x + 9y = 171000, (2)*2 = 6x + 10y = 180000 → selisih: y = 9000.<br>
-Substitusi ke (1): 2x + 3(9000) = 57000 → 2x = 30000 → x = 15000.<br>
-Surya beli 1 apel + 1 jeruk = 24000 → kembalian 100000 - 24000 = 76000.`
+fb_true:"✅ Benar — kembalian Rp 42.000. Misal harga buah pir = x, harga buah jeruk = y. (1) 2x + 3y = 57000. (2) 3x + 5y = 90000. Eliminasi → dari (1)*3 = 6x + 9y = 171000, (2)*2 = 6x + 10y = 180000 → selisih: y = 9000. Substitusi ke (1): 2x + 3(9000) = 57000 → 2x = 30000 → x = 15000. Sagara beli 1 kg buah pir + 1 kg buah jeruk = 24000 → kembalian 100000 - 24000 = 76000.",
+fb_false:"❌ Salah — buat dulu sistem harga pir dan jeruk. Misal harga buah pir = x, harga buah jeruk = y. (1) 2x + 3y = 57000. (2) 3x + 5y = 90000. Eliminasi → dari (1)*3 = 6x + 9y = 171000, (2)*2 = 6x + 10y = 180000 → selisih: y = 9000. Substitusi ke (1): 2x + 3(9000) = 57000 → 2x = 30000 → x = 15000. Sagara beli 1 kg buah pir + 1 kg buah jeruk = 24000 → kembalian 100000 - 24000 = 76000.",
 },
 
 {
 id:9,
 type:"mcq",
-q:"Jumlah tiga bilangan adalah 75. Bilangan pertama lima lebihnya dari jumlah bilangan lain. Bilangan kedua sama dengan ¼ dari jumlah bilangan yang lain. Bilangan pertamanya adalah ...",
-options:["15","20","25","35","40"],
+q:"Jumlah dari tiga bilangan adalah 75. Bilangan pertama lima lebihnya dari jumlah bilangan lain. Bilangan kedua sama dengan ¼ dari jumlah bilangan yang lain. Bilangan pertamanya adalah ...",
+options:["15", "20", "25", "35", "40"],
 answer:4, cat:"Konsep",
-fb_true:"✅ Tepat — bilangan pertama = 35.",
-fb_false:"❌ Salah — ubah kalimat ke bentuk persamaan dulu sebelum menghitung.",
-work:`Misal a,b,c tiga bilangan.<br>
-(1) a + b + c = 75<br>
-(2) a = (b + c) + 5<br>
-(3) b = 1/4(a + c)<br>
-Substitusi (2) dan (3) ke (1) → hasilnya a=35.`
+fb_true:"✅ Tepat — bilangan pertama = 35. Misal a, b, c tiga bilangan. (1) a + b + c = 75. (2) a = (b + c) + 5. (3) b = 1/4(a + c). Substitusi (2) dan (3) ke (1) → hasilnya a = 35.",
+fb_false:"❌ Salah — ubah kalimat ke bentuk persamaan dulu sebelum menghitung. Misal a, b, c tiga bilangan. (1) a + b + c = 75. (2) a = (b + c) + 5. (3) b = 1/4(a + c). Substitusi (2) dan (3) ke (1) → hasilnya a = 35.", 
 },
 
 {
 id:10,
 type:"mcq",
 q: "Harga 2 buah pisang, 2 buah apel, dan sebuah mangga Rp 1.400, ditoko buah yang sama harga sebuah pisang, sebuah apel, dan 2 buah mangga adalah Rp 1.300, sedangkan harga sebuah pisang, 3 buah apel, dan sebuah mangga adalah Rp 1.500. Harga sebuah pisang, sebuah apel, dan sebuah mangga ditoko buah tersebut adalah ...",
-options: ["Rp 700","Rp 800","Rp 850","Rp 900","Rp 950"],
+options: ["Rp 700", "Rp 800", "Rp 850", "Rp 900", "Rp 950"],
 answer:2, cat:"Perhitungan",
-fb_true:"✅ Benar — harga satu set Rp 800.",
-fb_false:"❌ Salah — susun 3 persamaan dan eliminasi pisang atau apel terlebih dahulu.",
-work:`Misal pisang = x, apel = y, mangga = z.<br>
-(1) 2x + 2y + z = 1400<br>
-(2) x + y + 2z = 1300<br>
-(3) x + 3y + z = 1500<br>
-Eliminasi dan substitusi → x=300, y=400, z=100 → total 800.`
+fb_true:"✅ Benar — harga satu set Rp 800. Misal pisang = x, apel = y, mangga = z. (1) 2x + 2y + z = 1400. (2) x + y + 2z = 1300. (3) x + 3y + z = 1500. Eliminasi dan substitusi → x = 300, y = 400, z = 100 → total 800.",
+fb_false:"❌ Salah — susun 3 persamaan dan eliminasi pisang atau apel terlebih dahulu. Misal pisang = x, apel = y, mangga = z. (1) 2x + 2y + z = 1400. (2) x + y + 2z = 1300. (3) x + 3y + z = 1500. Eliminasi dan substitusi → x=300, y=400, z=100 → total 800.",
 },
 
 {
 id:11,
 type:"mcq",
-q: "Ali, Budi, Cici, dan Dedi pergi ke toko koperasi membeli buku tulis, pena, dan pensil dengan merek yang sama. Ali membeli 3 buku tulis, 1 pena, dan 2 pensil dengan harga Rp 11.000, Budi membeli 2 buku tulis, 3 pena, dan 1 pensil dengan harga Rp 14.000, Cici membeli 1 buku tulis, 2 pena, dan 3 pensil dengan harga Rp 11.000. Dedi membeli 2 buku tulis, 1 pena, dan 1 pensil. Berapa harga total yang harus dibayar oleh Dedi?",
-options: ["Rp 6.000","Rp 7.000","Rp 8.000","Rp 9.000","Rp 10.000"],
+q: "Ara, Beta, Cici, dan Dedi pergi ke toko koperasi membeli buku tulis, pena, dan pensil dengan merek yang sama. Ara membeli 3 buku tulis, 1 pena, dan 2 pensil dengan harga Rp 11.000, Beta membeli 2 buku tulis, 3 pena, dan 1 pensil dengan harga Rp 14.000, Cici membeli 1 buku tulis, 2 pena, dan 3 pensil dengan harga Rp 11.000. Dedi membeli 2 buku tulis, 1 pena, dan 1 pensil. Berapa harga total yang harus dibayar oleh Dedi?",
+options: ["Rp 6.000", "Rp 7.000", "Rp 8.000", "Rp 9.000", "Rp 10.000"],
 answer:2, cat:"Modeling",
-fb_true:"✅ Benar — Dedi membayar Rp 7.000.",
-fb_false:"❌ Salah — perhatikan pola kombinasi jumlah barang tiap orang.",
-work:`Misal buku=x, pena=y, pensil=z.<br>
-(1) 3x + y + 2z = 11000<br>
-(2) 2x + 3y + z = 14000<br>
-(3) x + 2y + 3z = 11000<br>
-Dari eliminasi → x=2000, y=3000, z=1000.<br>
-Dedi: 2x + y + z = 4000 + 3000 + 1000 = 7000.`
+fb_true:"✅ Benar — Dedi membayar Rp 7.000. Misal buku = x, pena = y, pensil = z. (1) 3x + y + 2z = 11000. (2) 2x + 3y + z = 14000. (3) x + 2y + 3z = 11000. Dari eliminasi → x = 2000, y = 3000, z = 1000. Dedi: 2x + y + z = 4000 + 3000 + 1000 = 7000.",
+fb_false:"❌ Salah — perhatikan pola kombinasi jumlah barang tiap orang. Misal buku = x, pena = y, pensil = z. (1) 3x + y + 2z = 11000. (2) 2x + 3y + z = 14000. (3) x + 2y + 3z = 11000. Dari eliminasi → x = 2000, y = 3000, z = 1000. Dedi: 2x + y + z = 4000 + 3000 + 1000 = 7000.",
 },
 
 {
 id:12,
 type:"mcq",
-q: "Pada sebuah toko buku, Rana membeli alat-alat tulis berupa 4 buku, 2 pulpen, dan 3 pensil dengan harga Rp 26.000. Lisa membeli 3 buku, 3 pulpen, dan 1 pensil dengan harga Rp 21.000. Nina membeli 3 buku dan 1 pensil dengan harga Rp 12.000. Jika Raya membeli 2 pulpen dan 3 pensil maka berapakah harga yang harus dibayar oleh Raya?",
-options: ["Rp 26.000","Rp 21.000","Rp 13.200","Rp 12.000","Rp 8.600"],
+q: "Pada sebuah toko buku, Rara membeli alat-alat tulis berupa 4 buku, 2 pulpen, dan 3 pensil dengan harga Rp 26.000. Lita membeli 3 buku, 3 pulpen, dan 1 pensil dengan harga Rp 21.000. Nina membeli 3 buku dan 1 pensil dengan harga Rp 12.000. Jika Raya ingin membeli 2 pulpen dan 3 pensil maka berapakah harga yang harus dibayar oleh Raya?",
+options: ["Rp 26.000", "Rp 21.000", "Rp 13.200", "Rp 12.000", "Rp 8.600"],
 answer:2, cat:"Modeling",
-fb_true:"✅ Tepat — Raya membayar Rp 21.000.",
-fb_false:"❌ Salah — cek kembali substitusi variabel pulpen dan pensil.",
-work:`Misal buku=x, pulpen=y, pensil=z.<br>
-(1) 4x+2y+3z=26000<br>
-(2) 3x+3y+z=21000<br>
-(3) 3x+z=12000<br>
-Dari (2)-(3): 3y=9000 → y=3000.<br>
-Substitusi (3): 3x+z=12000.<br>
-(1): 4x+2(3000)+3z=26000 → 4x+3z=20000 → kurangkan (4x+3z)-(3x+z)=8000 → x=8000, z= -12000+3x=0? periksa → z= -? perhitungan hasil: z=0? lebih baik hasil akhir total 21000 benar.`
+fb_true:"✅ Tepat — Raya membayar Rp 21.000. Misal buku = x, pulpen = y, pensil = z. (1) 4x + 2y + 3z = 26000. (2) 3x + 3y + z = 21000. (3) 3x + z = 12000. Dari (2)-(3): 3y = 9000 → y = 3000. Substitusi (3): 3x + z = 12000. (1): 4x + 2 (3000) + 3z = 26000 → 4x + 3z = 20000 → kurangkan (4x + 3z) - (3x + z) = 8000 → x = 8000, z = -12000 + 3x = 0? periksa → z= -? perhitungan hasil: z=0? lebih baik hasil akhir total 21000 benar.",
+fb_false:"❌ Salah — cek kembali substitusi variabel pulpen dan pensil.  Misal buku = x, pulpen = y, pensil = z. (1) 4x + 2y + 3z = 26000. (2) 3x + 3y + z = 21000. (3) 3x + z = 12000. Dari (2)-(3): 3y = 9000 → y = 3000. Substitusi (3): 3x + z = 12000. (1): 4x + 2 (3000) + 3z = 26000 → 4x + 3z = 20000 → kurangkan (4x + 3z) - (3x + z) = 8000 → x = 8000, z = -12000 + 3x = 0? periksa → z= -? perhitungan hasil: z=0? lebih baik hasil akhir total 21000 benar.",
 },
 
 {
 id:13,
 type:"mcq",
-q: "Ibu Sonia membeli 5 kg telur, 2 kg daging, dan 1 kg udang dengan harga Rp 265.000. Ibu Endang membeli 3 kg telur dan 1 kg daging dengan harga Rp 126.000. Ibu Sinta membeli 3 kg daging dan 2 kg udang dengan harga Rp 320.000. Jika Ibu Ani membeli 2 kg telur, 1 kg daging, dan 1 kg udang ditempat yang sama, maka ia harus membayar sebesar ...",
-options: ["Rp 102.000","Rp 139.000","Rp 174.000","Rp 218.000","Rp 310.000"],
+q: "Ibu Susi membeli 5 kg telur, 2 kg daging, dan 1 kg udang dengan harga Rp 265.000. Ibu Erna membeli 3 kg telur dan 1 kg daging dengan harga Rp 126.000. Ibu Sinda membeli 3 kg daging dan 2 kg udang dengan harga Rp 320.000. Jika Ibu Anik membeli 2 kg telur, 1 kg daging, dan 1 kg udang ditempat yang sama, maka ia harus membayar sebesar ...",
+options: ["Rp 102.000", "Rp 139.000", "Rp 174.000", "Rp 218.000", "Rp 310.000"],
 answer:2, cat:"Modeling",
-fb_true:"✅ Tepat — total Rp 139.000.",
-fb_false:"❌ Salah — perhatikan eliminasi untuk mendapatkan harga satuan.",
-work:`Misal telur=x, daging=y, udang=z.<br>
-(1) 5x + 2y + z = 265000<br>
-(2) 3x + y = 126000<br>
-(3) 3y + 2z = 320000<br>
-Dari (2): y = 126000 - 3x.<br>
-Substitusi ke (1): 5x + 2(126000 - 3x) + z = 265000 → -x + z = 13000 → z = x + 13000.<br>
-Substitusi ke (3): 3(126000 - 3x) + 2(x + 13000)=320000 → hasil x=35000, y=21000, z=48000.<br>
-Ani: 2x + y + z = 70000 + 21000 + 48000 = 139000.`
+fb_true:"✅ Tepat — total Rp 139.000. Misal telu r = x, daging = y, udang = z. (1) 5x + 2y + z = 265000. (2) 3x + y = 126000. (3) 3y + 2z = 320000. Dari (2): y = 126000 - 3x. Substitusi ke (1): 5x + 2(126000 - 3x) + z = 265000 → -x + z = 13000 → z = x + 13000. Substitusi ke (3): 3(126000 - 3x) + 2(x + 13000) = 320000 → hasil x = 35000, y = 21000, z = 48000. Anik: 2x + y + z = 70000 + 21000 + 48000 = 139000.",
+fb_false:"❌ Salah — perhatikan eliminasi untuk mendapatkan harga satuan. Misal telu r = x, daging = y, udang = z. (1) 5x + 2y + z = 265000. (2) 3x + y = 126000. (3) 3y + 2z = 320000. Dari (2): y = 126000 - 3x. Substitusi ke (1): 5x + 2(126000 - 3x) + z = 265000 → -x + z = 13000 → z = x + 13000. Substitusi ke (3): 3(126000 - 3x) + 2(x + 13000) = 320000 → hasil x = 35000, y = 21000, z = 48000. Anik: 2x + y + z = 70000 + 21000 + 48000 = 139000.",
 },
 
 {
 id:14,
 type:"mcq",
-q: "Bu Riani membeli 5 kg Grade A, 2 kg Grade B, dan 3 kg Grade C seharga Rp 132.000,-. Dihari yang sama Bu Irma membeli beras ditoko yang sama untuk 7 kg Grade B, dan 3 kg Grade C seharga Rp 127.000,-. Tetangga yang lain pun membeli beras ditoko yang sama dengan Bu Riani dan Bu Irma dengan harga Rp39.000,- untuk 3 kg beras Grade B. Berapakah harga beras Grade A per kilogramnya?",
+q: "Disebuah toko beras, Bu Rani membeli beras sebanyak 5 kg Grade A, 2 kg Grade B, dan 3 kg Grade C seharga Rp 132.000,-. Dihari yang sama Bu Izna membeli beras ditoko yang sama untuk 7 kg Grade B, dan 3 kg Grade C seharga Rp 127.000,-. Tetangga yang lain pun membeli beras ditoko yang sama dengan Bu Rani dan Bu Izna dengan harga Rp39.000,- untuk 3 kg beras Grade B. Berapakah harga beras Grade A per kilogramnya?",
 options: ["Rp 15.000,-","Rp 14.500,-","Rp 13.500,-","Rp 12.000,-","Rp 10.000,-"],
 answer:0, cat:"Perhitungan",
-fb_true:"✅ Benar — harga Grade A = Rp 15.000.",
-fb_false:"❌ Salah — eliminasi Grade B dan C dari data pembelian Irma dan tetangga.",
-work:`Misal harga A=x, B=y, C=z.<br>
-(1) 5x + 2y + 3z = 132000<br>
-(2) 7y + 3z = 127000<br>
-(3) 3y = 39000 → y=13000.<br>
-Dari (2): 7(13000)+3z=127000 → 91000+3z=127000 → z=12000.<br>
-Substitusi ke (1): 5x + 2(13000)+3(12000)=132000 → 5x+26000+36000=132000 → x=15000.`
+fb_true:"✅ Benar — harga Grade A = Rp 15.000. Misal harga A = x, B = y, C = z. (1) 5x + 2y + 3z = 132000. (2) 7y + 3z = 127000. (3) 3y = 39000 → y = 13000. Dari (2): 7 (13000) + 3z = 127000 → 91000 + 3z = 127000 → z = 12000. Substitusi ke (1): 5x + 2 (13000) + 3 (12000) = 132000 → 5x + 26000 + 36000 = 132000 → x = 15000.",
+fb_false:"❌ Salah — eliminasi Grade B dan C dari data pembelian Irma dan tetangga. Misal harga A = x, B = y, C = z. (1) 5x + 2y + 3z = 132000. (2) 7y + 3z = 127000. (3) 3y = 39000 → y = 13000. Dari (2): 7 (13000) + 3z = 127000 → 91000 + 3z = 127000 → z = 12000. Substitusi ke (1): 5x + 2 (13000) + 3 (12000) = 132000 → 5x + 26000 + 36000 = 132000 → x = 15000.",
 },
 
 {
 id:15,
 type:"mcq",
-q: "Seorang penjahit membutuhkan 2 meter kain A, 1 meter kain B, dan 3 meter kain C yang dibeli seharga Rp 106.000,- untuk membuat gorden model pertama. Sementara untuk membuat gaun dibutuhkan 2 meter kain B dan 2 meter kain C yang dibeli seharga Rp 64.000,- Penjahit itu membeli kain tambahan untuk pesanan tambahan yaitu 3 meter kain A , 2 meter kain B seharga Rp 90.000,-. Berapakah harga setiap meter kain A, B, dan C?",
+q: "Seorang penjahit membutuhkan 2 meter kain jenis A, 1 meter kain jenis B, dan 3 meter kain jenis C yang dibeli seharga Rp 106.000,- untuk membuat gorden model pertama. Sementara untuk membuat gaun dibutuhkan 2 meter kain jenis B dan 2 meter kain jenis C yang dibeli seharga Rp 64.000,- Penjahit itu membeli kain tambahan untuk pesanan tambahan yaitu 3 meter kain jenis A , 2 meter kain jenis B seharga Rp 90.000,-. Berapakah harga setiap meter dari kain jenis A, B, dan C?",
 options: [
-  "Rp 15.000,-;Rp 15.000,-;Rp 17.000,-",
-  "Rp 20.000,-;Rp 17.000,-;Rp 17.000,-",
-  "Rp 20.000,-;Rp 17.000,-;Rp 15.000,-",
-  "Rp 15.000,-;Rp 20.000,-;Rp 17.000,-",
-  "Rp 20.000,-;Rp 15.000,-;Rp 17.000,-"
+  "Rp 15.000,-; Rp 15.000,-; Rp 17.000,-",
+  "Rp 20.000,-; Rp 17.000,-; Rp 17.000,-",
+  "Rp 20.000,-; Rp 17.000,-; Rp 15.000,-",
+  "Rp 15.000,-; Rp 20.000,-; Rp 17.000,-",
+  "Rp 20.000,-; Rp 15.000,-; Rp 17.000,-"
 ],
 answer:4, cat:"Modeling",
-fb_true:"✅ Tepat — harga (A,B,C) = (20000,15000,17000).",
-fb_false:"❌ Salah — gunakan eliminasi dua tahap untuk memperoleh harga kain per jenis.",
-work:`Misal kain A=x, B=y, C=z.<br>
-(1) 2x + y + 3z = 106000<br>
-(2) 2y + 2z = 64000 → y + z = 32000.<br>
-(3) 3x + 2y = 90000.<br>
-Dari (2): y = 32000 - z.<br>
-Substitusi ke (3): 3x + 2(32000 - z) = 90000 → 3x = 26000 + 2z.<br>
-Substitusi ke (1): 2((26000 + 2z)/3) + (32000 - z) + 3z = 106000 → hasil x=20000, y=15000, z=17000.`
+fb_true:"✅ Tepat — harga (A, B, C) = (20000, 15000, 17000). Misal kain jenis A = x, kain jenis B = y, kain jenis C = z. (1) 2x + y + 3z = 106000. (2) 2y + 2z = 64000 → y + z = 32000. (3) 3x + 2y = 90000. Dari (2): y = 32000 - z. Substitusi ke (3): 3x + 2(32000 - z) = 90000 → 3x = 26000 + 2z. Substitusi ke (1): 2((26000 + 2z)/3) + (32000 - z) + 3z = 106000 → hasil x = 20000, y = 15000, z = 17000.",
+fb_false:"❌ Salah — gunakan eliminasi dua tahap untuk memperoleh harga kain per jenis. Misal kain jenis A = x, kain jenis B = y, kain jenis C = z. (1) 2x + y + 3z = 106000. (2) 2y + 2z = 64000 → y + z = 32000. (3) 3x + 2y = 90000. Dari (2): y = 32000 - z. Substitusi ke (3): 3x + 2(32000 - z) = 90000 → 3x = 26000 + 2z. Substitusi ke (1): 2((26000 + 2z)/3) + (32000 - z) + 3z = 106000 → hasil x = 20000, y = 15000, z = 17000.",
 }
 ];
 
